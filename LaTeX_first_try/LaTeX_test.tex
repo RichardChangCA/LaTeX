@@ -1,0 +1,231 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\def\eq1{y=\frac{x}{3x^2+x+1}}
+\def\labelaxes{Something unimportant}
+
+\begin{document}
+
+\tableofcontents
+
+\title{\LaTeX \ demo}
+\author{Lingfeng Zhang}
+\date{\today}
+\maketitle
+
+Graph$\eq1$ \labelaxes
+
+the set of natural numbers is denoted by $\mathbb{N}$
+
+the set of Integers is denoted by $\mathbb{Z}$
+
+the set of real number is denoted by $\mathbb{R}$
+
+This is  Bo Li \\
+\begin{center}\includegraphics[width=3in]{viva.jpeg}\end{center}
+\begin{center}\includegraphics[scale=0.5]{viva.jpeg}\end{center}
+\begin{center}\includegraphics[angle=45,scale=0.1]{viva.jpeg}\end{center}
+
+Mention about the image file type
+
+Suppose we are given a rectangle with side lengths $(x+1)$ and$(x+3)$
+
+superscript: $2x^3$,next line: $$2x^{34}$$
+$$2x^{3x+4}$$
+$$2x^{3x^2+4}$$
+
+subscript:$$x_1$$
+$$x_{21}$$
+$${x_1}_2$$
+$${{x_1}_2}_3$$
+
+Greek letters:
+$$\pi$$
+$$\alpha$$
+$$A=\pi r^2$$
+
+triangle letters:
+$$y=\sin{x}$$
+
+log function:
+$$\log{x}$$
+$$\log_5{x}$$
+$$\ln{x}$$
+
+square roots:
+$$\sqrt{2}$$
+$$\sqrt[3]{2}$$
+$$\sqrt{x^2+y^2}$$
+$$\sqrt{1+\sqrt{x}}$$
+
+fraction:\\
+about 2/3 of the glass is full
+$2/3$ nothing changed
+$$\frac{2}{3}$$ works
+$$\displaystyle{\frac{2}{3}}$$ normal size 
+$$\frac{x+1}{x^2+\sqrt{x}}$$
+$$\frac{\sqrt{x+1}}{\sqrt{x-1}}$$
+$$\frac{1+\frac{2}{3}}{4}$$
+$$\sqrt{\frac{x+1}{x^2+3}}$$
+
+brackets:
+$$(x+1)$$
+$$[x+2]$$
+$$\{x+3\}$$
+$$\$12.55$$
+$$3(\frac{2}{3})$$parameters too small
+$$3\left(\frac{2}{3}\right)$$
+$$3\left[\frac{2}{3}\right]$$
+$$3\left\{\frac{2}{3}\right\}$$
+$$|x|$$
+$$\left|\frac{x}{2+1}\right|$$
+$$\left\{x^2\right\}$$
+missing right curly parameter by using dot .$$\left\{x^2\right.$$ 
+$$\left|\frac{dy}{dx}\right|_{x+1}$$
+$$\left.\frac{dy}{dx}\right|_{x+1}$$
+
+table:
+
+\begin{tabular}{ccccccc}
+$x$ &1&2&3&4&5&6\\ 
+$f(x)$ &11&12&13&14&15&16\\ 
+\end{tabular}
+
+\begin{tabular}{ccccccc}
+\hline
+$x$ &1&2&3&4&5&6\\ \hline
+$f(x)$ &11&12&13&14&15&16\\ \hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c}
+\hline
+$x$ &1&2&3&4&5&6\\ \hline
+$f(x)$ &11&12&13&14&15&16\\ \hline
+\end{tabular}
+
+equation array with (sequence number)
+\begin{eqnarray}
+5x^2-9=x+3\\
+x^4 = 4+x\\
+x +4 = 3\\
+x\approx\pm1.123
+\end{eqnarray}
+\\
+equation array without {sequence number}
+\begin{eqnarray*}
+5x^2-9=x+3\\
+x^4 = 4+x\\
+x +4 = 3\\
+x\approx\pm1.123
+\end{eqnarray*}
+equation array with {sequence number} and align by "="
+\begin{eqnarray}
+5x^2-9&=&x+3\\
+x^4 &=& 4+x\\
+x +4 &=& 3\\
+x&\approx&\pm1.123
+\end{eqnarray}
+
+list:
+
+\begin{enumerate}
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+	\begin{enumerate}
+	\item assessments
+		\begin{enumerate}
+		\item quizzes
+		\item tests
+		\end{enumerate}
+	\item homework
+	\item notes $\sigma\theta$
+	\end{enumerate}
+\item graph paper
+\end{enumerate}
+
+\begin{itemize}
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+	\begin{itemize}
+	\item assessments
+		\begin{itemize}
+		\item quizzes
+		\item tests
+		\end{itemize}
+	\item homework
+	\item notes $\sigma\theta$
+	\end{itemize}
+\item graph paper
+\end{itemize}
+
+label right justified:
+
+\begin{enumerate}
+\item[Commutative] $a+b=b+a$
+\item[Associative] $a+(b+c)=(a+b)+c$
+\item[Distributive] $a(b+c)=ab+ac$
+\end{enumerate}
+
+This will produce \textit{italicized} text
+
+This will produce \textbf{bold-faced} text
+
+This will produce \textsc{small caps} text
+
+This will produce \texttt{typewriter} font
+
+Please will my github at \texttt{http://www.github.com/RichardChangCA}.
+
+please call me Lingfeng Zhang
+
+please call me \begin{large}
+Lingfeng Zhang
+\end{large} $-->$ large
+
+please call me \begin{Large}
+Lingfeng Zhang
+\end{Large} $-->$ Large
+
+please call me \begin{huge}
+Lingfeng Zhang
+\end{huge} $-->$ huge
+
+please call me \begin{Huge}
+Lingfeng Zhang
+\end{Huge} $-->$Huge
+
+please call me \begin{small}
+\emph{Lingfeng Zhang}
+\end{small}$-->$ small
+
+please call me \begin{tiny}
+Lingfeng Zhang
+\end{tiny} $-->$tiny
+
+\begin{center}
+This is center
+\end{center}
+
+\begin{flushleft}
+this is left justified
+\end{flushleft}
+
+\section{Linear functions}
+	\subsection{matrix}
+	\subsection{vector}
+	\subsection{space}
+\section{Quadratic functions}
+	\subsection{Standard form}
+
+Using structure and click these icons$\bigtriangledown\amalg\odot$
+
+%comment
+
+\end{document}
